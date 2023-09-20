@@ -8,17 +8,25 @@ public class Simple369 {
 		
 		System.out.print("Enter integer value 1~99 : ");
 		int num = scanner.nextInt();
-		if((num/10) % 3 == 0 || (num%10) % 3 == 0) {
-			if((num/10) % 3 == 0 && (num%10) % 3 == 0) {
+		if(num > 10) {
+			if((num/10) % 3 == 0 || (num%10) % 3 == 0) {
+				if((num/10) % 3 == 0 && (num%10) % 3 == 0) {
 				ans = "박수짝짝";	
+				}
+				else {
+				ans = "박수짝";
+				}
 			}
 			else {
-				ans = "박수짝";
+			ans = "no 3, 6, or 9";
 			}
+		}
+		else if(num == 3 || num == 6 || num == 9) {
+				ans = "박수짝";
 		}
 		else {
 			ans = "no 3, 6, or 9";
-		}
+		}	
 		System.out.println("" + ans);
 		
 		scanner.close();
