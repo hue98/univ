@@ -10,11 +10,11 @@ public class ArrayTest {
 		
 		System.out.println("length of dnum array: " + dnum.length);
 		System.out.print("uninitialized dnum[] values: ");
-		for(i=0; i < dnum.length; i++)
+		for(i = 0; i < dnum.length; i++)
 			System.out.print(dnum[i]+ "");
 		System.out.println();
 		
-		for(i=0; i<dnum.length; i++) {
+		for(i = 0; i<dnum.length; i++) {
 			System.out.print("dnum["+i+"] value: ");
 			dnum[i] = stdin.nextDouble();
 		}
